@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+/* ********************bg1*************************** */
+.bg1 {
+  background-image: url('./Assets/1.png');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg1-content {
+  padding: 300px 19%;
+}
+
+.bg1-content .overall-content {
+  animation: contentAnimate 1s ease-in-out;
+}
+
+@keyframes contentAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+}
+
+.content-1 {
+  font-size: 1.6rem;
+  color: #1c223a;
+  font-family: "Dosis", sans-serif;
+}
+
+.bg1-content img {
+  animation: imgAnimate 1s ease-in-out;
+}
+
+@keyframes imgAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}
+
+h1 {
+  font-weight: 500;
+}
+
+.para {
+  line-height: 2rem;
+  color: rgb(102, 102, 102);
+  font-size: 1.1rem;
+  padding-right: 5rem;
+}
+
+button {
+  color: #ffffff;
+  padding: 12px 35px;
+  border: none;
+  background-color: #02ad88;
+  box-shadow: 0px 10px 30px 0px rgb(2 173 136 / 40%);
+  font-weight: bold;
+  font-size: 13px;
+  /* letter-spacing: 1px; */
+}
+
+/* ********************bg2*************************** */
+.bg2 {
+  background-image: url('./Assets/2.png');
+  background-position: top right;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+}
+
+.bg2-content {
+  padding: 0% 18%;
+  height: 80vh;
+}
+
+.bg2-sub-content {
+  height: 50vh;
+  padding: 0 16%;
+}
+
+.blur {
+  opacity: 0.9;
+  font-size: 17px;
+}
+
+
+.bg2-content .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: headerAnimate 1s ease-in-out;
+}
+
+@keyframes headerAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.bg2-content p {
+  max-width: 93%;
+  color: rgb(102, 102, 102);
+  font-size: 1.1rem;
+}
+
+.card-style {
+  /* width: 16.5rem; */
+  border: none !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  padding: 1.8rem 0;
+  margin: 20px 15px;
+  animation: cardAnimate 1s ease-in-out;
+}
+
+@keyframes cardAnimate {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+}
+
+.card-style:hover {
+  background-color: #02ad88;
+}
+
+.card-style:hover .card-title {
+  color: white;
+}
+
+.card-style:hover .card-text {
+  color: white;
+}
+
+
+.card-style .shield-icon {
+  color: #02ad88;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgba(2, 173, 136, 0.2);
+}
+
+.card-style .card-title {
+  font-size: 1rem !important;
+  text-align: center;
+}
+
+.card-style .card-text {
+  font-size: 0.9rem;
+  color: #757575;
+  padding: 0 19px;
+  text-align: center;
+}
+
+.img2-width {
+  max-width: 100%;
+  height: auto;
+}
+
+.scroll-content {
+  background-color: red;
+}
+
+@media screen and (max-width: 1300px) {
+  .bg1-content {
+    padding: 18% 5%;
+  }
+
+  .bg2-content {
+    padding: 0% 5%;
+  }
+
+}
+
+.dummy-text {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.margin-align {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-outline {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(2, 173, 136, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-outline .icon {
+  color: #02ad88;
+  font-size: 30px;
+}
+
+.dummy-text h3 {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Dosis", sans-serif !important;
+  color: #1c223a;
+  line-height: 1.2;
+}
+
+.cards-outline {
+  text-align: center;
+  padding: 1.5rem 0;
+  border: 1px solid rgb(241, 234, 234) !important;
+}
+
+.cards-outline:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cards-outline .shield-icon {
+  color: #02ad88;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgba(2, 173, 136, 0.2);
+}
+
+.cards-outline .card-title {
+  font-size: 1rem !important;
+  text-align: center;
+}
+
+.cards-outline .card-text {
+  font-size: 0.9rem;
+  color: #757575;
+  padding: 0 19px;
+  text-align: center;
+}
+
+.bg3 {
+  background-image: url('./Assets/3.png');
+  background-position: top left;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 85vh;
+  margin-top: 5rem;
+}
+
+.bg3 h3 {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Dosis", sans-serif !important;
+  color: #1c223a;
+  line-height: 1.2;
+}
+
+.bg3 .table-light {
+  background-color: #fdfeff !important;
+  border: 0 solid #f1f2f9 !important;
+  background-color: transparent !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  width: 82%;
+  margin: 0 8%;
+  margin-top: 30px;
+}
+
+.bg3 thead tr th {
+  padding: 35px 0;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.bg3 tbody tr td {
+  padding: 15px 0;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.bg3 tbody tr td button {
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  background-color: #02ad88;
+  box-shadow: 0px 10px 30px 0px rgb(2 173 136 / 40%);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bg3 tbody .buttonId td {
+  padding: 40px 0 !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: rgb(249, 250, 255) !important;
+  /* color: var(--bs-table-striped-color); */
+}
+
+table>:not(caption)>*>* {
+  padding: 0.5rem 0.5rem;
+  background-color: white !important;
+  border-bottom-width: 1px;
+}
+
+.bg4 {
+  background-color: #02ad88;
+  background-image: url('./Assets/4.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 400px;
+}
+.bg4 .vetical-align{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.bg4 .vetical-align div{
+  font-size: 19px;
+}
+.bg4 .vetical-align button{
+  color: black;
+  padding: 12px 35px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 13px;
+  opacity: 0.9;
+  border-radius: 0px;
+}

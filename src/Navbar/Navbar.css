@@ -1,0 +1,21 @@
+.nav-links{
+    margin: 1rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.nav-container{
+    padding: 10px 19%;
+    position: fixed;
+    top:0;
+}
+
+.scroll-animate{
+    box-shadow: rgba(123, 139, 155, 0.2) 0px 8px 24px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+@media screen and (max-width: 1300px){
+    .nav-container{
+        padding: 0  5%;
+    }
+}
