@@ -10,7 +10,7 @@
   background-image: url('./Assets/1.png');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -54,7 +54,6 @@ h1 {
   line-height: 2rem;
   color: rgb(102, 102, 102);
   font-size: 1.1rem;
-  padding-right: 5rem;
 }
 
 button {
@@ -79,11 +78,11 @@ button {
 
 .bg2-content {
   padding: 0% 18%;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .bg2-sub-content {
-  height: 50vh;
+  min-height: 50vh;
   padding: 0 16%;
 }
 
@@ -182,7 +181,7 @@ button {
   }
 
   .bg2-content {
-    padding: 0% 5%;
+    padding: 0 5%;
   }
 
 }
@@ -265,7 +264,7 @@ button {
   background-position: top left;
   background-size: auto;
   background-repeat: no-repeat;
-  height: 85vh;
+  min-height: 85vh;
   margin-top: 5rem;
 }
 
@@ -356,4 +355,89 @@ table>:not(caption)>*>* {
   font-size: 13px;
   opacity: 0.9;
   border-radius: 0px;
+}
+
+.bg5{
+  background-image: url('./Assets/5.png');
+  background-repeat: no-repeat;
+  background-position: center 65%;
+  min-height: 80vh;
+}
+.bg5 .bg5-heading{
+  padding-top: 110px;
+}
+.bg5 .bg5-center{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hr-line{
+  width: 7%;
+  height: 2px;
+  background-color:#1c223a;
+}
+.hr2-line{
+  margin-top: 5px;
+  width: 4%;
+  height: 2px;
+  background-color:#1c223a;
+}
+.background-light{
+  background: rgb(249, 250, 255) !important;
+  min-height: 80vh;
+  padding: 6rem 0;
+}
+.bglight-padding{
+  padding: 6rem 0;
+}
+ .bglight-center{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-lightGreen{
+  background-color: #e0f2f3!important;
+  margin: 1rem 3px;
+  padding: 40px 30px;
+  overflow: hidden;
+  width: 90%;
+}
+
+.bg-lightGreen h5{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.inner-box div{
+  font-size: 15.4px;
+}
+@media only screen and (max-width: 991px) {
+  .bglight-padding div img{
+    margin: 20px 0;
+}
+}
+@media only screen and (max-width: 1399px){
+  .content-width{
+       width: 46% !important;
+  }
+}
+@media only screen and (max-width: 1199px){
+  .content-width{
+       width: 56% !important;
+  }
+}
+@media only screen and (max-width: 991px){
+  .content-width{
+       width: 76% !important;
+  }
+}
+@media only screen and (max-width: 767px){
+  .content-width{
+       width: 100% !important;
+       /* background-color: #02ad88; */
+  }
 }
